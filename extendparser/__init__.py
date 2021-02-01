@@ -13,7 +13,7 @@ from .get import Get
 from .include import Include
 
 __author__ = "Ondřej Tůma"
-__version__ = "0.3.0-dev"
+__version__ = "0.3.0"
 __copyright__ = "Copyright 2018"
 __license__ = "BSD"
 __email__ = "mcbig@zeropage.cz"

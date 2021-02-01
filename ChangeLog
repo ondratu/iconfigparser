@@ -1,8 +1,8 @@
 ChangeLog
 =========
 
-0.3.0 - dev
------------
+0.3.0
+-----
 * Python3.x support only
 * Use pylint instead of flake8
 * pre-commit config
