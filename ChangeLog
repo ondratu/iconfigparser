@@ -1,6 +1,10 @@
 ChangeLog
 =========
 
+0.3.1
+-----
+* mypy support
+
 0.3.0
 -----
 * Python3.x support only

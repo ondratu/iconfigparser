@@ -7,10 +7,10 @@ python:
  - '3.9'
 
 install:
- - pip3 install pytest pytest-pylint pytest-doctestplus
+ - pip3 install pytest pytest-pylint pytest-mypy pytest-doctestplus
 
 script:
- - pytest -v --pylint --doctest-plus --doctest-rst
+ - pytest -v --pylint --mypy --doctest-plus --doctest-rst
 
 before_deploy:
  - python3 setup.py sdist
@@ -23,6 +23,7 @@ deploy:
     secure: xtDX9SWkKVk6koGVjI97krZDBd5l00JvuUfWy95Hb25OO/biwftDlim5N/yZZz2VxqPQGvO0JmySMS55e6CgrI4j2U97V2Di7Fr6Z89ejCTq+hDJTX09Qqkb5f149LyvK9r0QyH+o/vT5MJpgxrUOPS25TMqqK/3xy+tHEQumipO1uRYnUBA0fBiatgy4h0yaSFmsQ9mQZJC1FPV5vcY8Akb3dUhGxPUYHzd500Aa+ydwe2WPpaoST5bBLjgOsL4USM1irxriLXlD7dmCmZaG1Ey9SnOS/G2KUjA86qmLTwjqddjbdKwWimlZvDtKai45DLKtzPdayN77gXNJzxMMqkruNWZI2hRhDRg9Dg8Cu8lgcrtzoiGCle5sgfRCvxTrDT47SsZN1og0ujHyVB0LzdUV2+4xCgR5jUZeTfOPeEQWUk9dnEKKMwUXzv7oUq0e9M2HpkHwfLo1MlhCMHdRgzJv5zube4FQJS3L8fR8HbL6kMT9peq3XpNzzzXF2/mfT+miDS8DU7DTvZv7Narcpw+0ljar/dTO9ydKwMfq5tCKCLzQMbmAhEFN4ez7teQL8g/aMk9NZEnMhBePec4NbZaF7YdPmmPxz9xIaQKIYFYsPv7JUnnC39PKmW7CJvHR8sdW+AdP87uvqkEXoIpZDin5wNN1T4cpchAsaM6rBo=
    distribution: sdist bdist_wheel
    skip_cleanup: true
+   skip_existing: true
    overwrite: true
    on:
     repo: ondratu/extendparser

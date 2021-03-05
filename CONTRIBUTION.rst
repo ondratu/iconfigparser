@@ -23,5 +23,5 @@ Next command check all .rst files, source code with pep8 and doctest checkers.
 
 .. code:: sh
 
-    # check pep8 and doctest with pytest (pytest + pep8 extension + doctest-plus)
-    ~$ pytest -v --pep8 --doctest-plus --doctest-rst
+    # check code with pytest and pylint, mypy and doctest
+    ~$ pytest -v --pylint --mypy --doctest-plus --doctest-rst

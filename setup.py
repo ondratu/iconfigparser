@@ -1,5 +1,5 @@
 """extendparser package installation."""
-from setuptools import setup
+from setuptools import setup  # type: ignore
 
 from extendparser import __name__ as name, __version__, __author__, \
     __email__, __license__
@@ -23,6 +23,7 @@ setup(
     url="https://github.com/ondratu/extendparser",
     license=__license__,
     packages=["extendparser"],
+    package_data={"": ["py.typed"]},
     data_files=[('share/doc/extendparser',
                  ["README.rst", "COPYING", "ChangeLog", "AUTHORS",
                   "CONTRIBUTION.rst"])],

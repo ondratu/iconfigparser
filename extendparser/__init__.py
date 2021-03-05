@@ -9,11 +9,12 @@ example code:
     >>> cp = ExtendParser()
 """
 
-from .get import Get
-from .include import Include
+from extendparser.get import Get
+from extendparser.include import Include
 
 __author__ = "Ondřej Tůma"
-__version__ = "0.3.0"
+__version__ = "0.3.1"
+__date__ = "5 Mar 2021"
 __copyright__ = "Copyright 2018"
 __license__ = "BSD"
 __email__ = "mcbig@zeropage.cz"
